@@ -5,28 +5,28 @@ int main()
 {
     setlocale(LC_ALL, "Rus");
 
-    const double Pi = 3.14; // Число Пи
+    const double Pi = 3.14; //  Р§РёСЃР»Рѕ РџРё
 
     double radius, angle, circumference, area, sector_area;
 
-    cout << "Введите радиус окружности: ";
+    cout << "Р’РІРµРґРёС‚Рµ СЂР°РґРёСѓСЃ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё: ";
     cin >> radius;
-    cout << "Введите угол кругового сектора: ";
+    cout << "Р’РІРµРґРёС‚Рµ СѓРіРѕР» РєСЂСѓРіРѕРІРѕРіРѕ СЃРµРєС‚РѕСЂР°: ";
     cin >> angle;
 
     if ((radius >= 1) and (angle > 0 and angle <= 360))
     {
-        circumference = 2 * Pi * radius; // Длина окружности
-        area = Pi * (radius * radius); // Площадь круга
-        sector_area = (area / 360) * angle ;// Площадь кругового сектора (в градусах)
+        circumference = 2 * Pi * radius; // Р”Р»РёРЅР° РѕРєСЂСѓР¶РЅРѕСЃС‚Рё
+        area = Pi * (radius * radius); // РџР»РѕС‰Р°РґСЊ РєСЂСѓРіР°
+        sector_area = (area / 360) * angle ;// РџР»РѕС‰Р°РґСЊ РєСЂСѓРіРѕРІРѕРіРѕ СЃРµРєС‚РѕСЂР° (РІ РіСЂР°РґСѓСЃР°С…)
 
-        cout << "Длина окружности: " << circumference << endl;
-        cout << "Площадь круга: " << area << endl;
-        cout << "Площадь кругового сектора: " << sector_area << endl;
+        cout << "Р”Р»РёРЅР° РѕРєСЂСѓР¶РЅРѕСЃС‚Рё: " << circumference << endl;
+        cout << "РџР»РѕС‰Р°РґСЊ РєСЂСѓРіР°: " << area << endl;
+        cout << "РџР»РѕС‰Р°РґСЊ РєСЂСѓРіРѕРІРѕРіРѕ СЃРµРєС‚РѕСЂР°: " << sector_area << endl;
     }
     else
     {
-        cout << "Такой окружности не существует!" << endl;
+        cout << "РўР°РєРѕР№ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!" << endl;
     }
 
     return 0;
